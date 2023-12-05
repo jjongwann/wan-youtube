@@ -1,20 +1,20 @@
 import { CiBaseball } from "react-icons/ci";
 import { CiCoins1 } from "react-icons/ci";
-import { CiBoxes } from "react-icons/ci";
-import { CiBullhorn } from "react-icons/ci";
-import { CiCoffeeCup } from "react-icons/ci";
-import { CiDumbbell } from "react-icons/ci";
-import { CiFries } from "react-icons/ci";
 import { CiMoneyBill } from "react-icons/ci";
 
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineCodepen } from "react-icons/ai";
 import { AiFillYoutube } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
+import { TbChristmasTree } from "react-icons/tb";
+import { GiLoveSong } from "react-icons/gi";
+import { TiLeaf } from "react-icons/ti";
+import { FaAppleAlt } from "react-icons/fa";
+import { GiDreamCatcher } from "react-icons/gi";
 
 export const headerMenus = [
     {
-        title: "웹스토리보이",
+        title: "완튜브",
         icon: <CiBaseball />,
         src: "/"
     },
@@ -29,36 +29,36 @@ export const headerMenus = [
         src: "/developer"
     },
     {
-        title: "웹디자인기능사",
-        icon: <CiBoxes />,
-        src: "/webd"
+        title: "크리스마스 캐롤",
+        icon: <TbChristmasTree />,
+        src: "/carol"
     },
     {
-        title: "웹표준 사이트",
-        icon: <CiBullhorn />,
-        src: "/website"
+        title: "드림코딩 사이트",
+        icon: <GiDreamCatcher />,
+        src: "/dreamCoding"
     },
     {
-        title: "GSAP Parallax",
-        icon: <CiCoffeeCup />,
-        src: "/gsap"
+        title: "코딩할때 듣는 노래",
+        icon: <GiLoveSong />,
+        src: "/lofi"
     },
     {
-        title: "포트폴리오 사이트",
-        icon: <CiDumbbell />,
-        src: "/port"
+        title: "인프런 사이트",
+        icon: <TiLeaf />,
+        src: "/inflearn"
     },
     {
-        title: "유튜브 클론 사이트",
-        icon: <CiFries />,
-        src: "/youtube"
+        title: "코딩애플 사이트",
+        icon: <FaAppleAlt />,
+        src: "/Codingapple"
     },
 ];
 
 export const searchKeyword = [
     {
-        title: "webstoryboy",
-        src: "/search/webstoryboy"
+        title: "BTS",
+        src: "/search/bts"
     },
     {
         title: "HTML",
