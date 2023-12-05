@@ -51,7 +51,7 @@ export const headerMenus = [
     {
         title: "코딩애플 사이트",
         icon: <FaAppleAlt />,
-        src: "/Codingapple"
+        src: "/codingapple"
     },
 ];
 
