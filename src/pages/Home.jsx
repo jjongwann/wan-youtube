@@ -2,11 +2,12 @@ import React from 'react'
 import Main from '../components/section/Main'
 import Today from '../components/contents/Today'
 import Developer from '../components/contents/Developer'
-import Carol from '../components/contents/Carol'
-import DreamCoding from '../components/contents/DreamCoding'
-import Lofi from '../components/contents/Lofi'
-import Inflearn from '../components/contents/Inflearn'
-import Codingapple from '../components/contents/Codingapple'
+import VideoSlider from '../components/video/VideoSlider'
+import { carolText } from '../data/carol'
+import { dreamCodingText } from '../data/dreamCoding'
+import { lofiText } from '../data/lofi'
+import { inflearnText } from '../data/inflearn'
+import { codingappleText } from '../data/coddingapple'
 
 const Home = () => {
     return (
@@ -15,11 +16,11 @@ const Home = () => {
             description="완 유튜버 사이트에 오신 것을 환영합니다.">
             <Today />
             <Developer />
-            <Carol />
-            <DreamCoding />
-            <Lofi />
-            <Inflearn />
-            <Codingapple />
+            <VideoSlider videos={carolText} title='☃️크라스마스 케롤송!🎄🎅' id='carol' />
+            <VideoSlider videos={dreamCodingText} title='자바스크립트 기초 강의 (ES5+): 같이 노트를 작성하며 배워요 📒' id='dreamCoding' />
+            <VideoSlider videos={lofiText} title='🤓 코딩할때 듣기 좋은 노래 • 3 hours playlist • lofi type beat • beats to relax • study music' id='lofi' />
+            <VideoSlider videos={inflearnText} title='🌱 inflaylist' id='inflearn' />
+            <VideoSlider videos={codingappleText} title='🤗 텐서플로우 딥러닝 기초' id='codingapple' />
         </Main>
     )
 }
