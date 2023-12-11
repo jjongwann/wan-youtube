@@ -7,7 +7,7 @@ import { carolText } from '../data/carol'
 import { dreamCodingText } from '../data/dreamCoding'
 import { lofiText } from '../data/lofi'
 import { inflearnText } from '../data/inflearn'
-import { codingappleText } from '../data/coddingapple'
+import { codingappleText } from '../data/codingapple'
 import { developerText } from '../data/developer'
 import { todayText } from '../data/today'
 

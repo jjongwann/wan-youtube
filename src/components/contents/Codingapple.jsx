@@ -1,5 +1,5 @@
 import React from 'react'
-import { codingappleText } from '../../data/coddingapple'
+import { codingappleText } from '../../data/codingapple'
 import { Link } from 'react-router-dom'
 
 const Codingapple = () => {
