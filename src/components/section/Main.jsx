@@ -3,26 +3,28 @@ import { HelmetProvider, Helmet } from 'react-helmet-async'
 import Header from './Header'
 import Footer from './Footer'
 import Search from './Search'
+import ScrollTo from '../../utils/scrollTo' // 추가
 
 const Main = (props) => {
-  return (
-    <HelmetProvider>
-      <Helmet 
-          titleTemplate="%s | Wan Youtube" 
-          defaultTitle="Wan Youtube" 
-          defer={false}
-      >
-          {props.title && <title>{props.title}</title>} 
-          <meta name="description" content={props.description} />
-      </Helmet>
+    return (
+        <HelmetProvider>
+        <ScrollTo /> 
+        <Helmet 
+            titleTemplate="%s | Wan Youtube" 
+            defaultTitle="Wan Youtube" 
+            defer={false}
+        >
+        {props.title && <title>{props.title}</title>} 
+        <meta name="description" content={props.description} />
+        </Helmet>
 
-      <Header/>
-      <main id='main' role='main'>
+        <Header/>
+            <main id='main' role='main'>
         <Search />
         {props.children}
-      </main>
-      <Footer/>
-    </HelmetProvider>
+        </main>
+        <Footer/>
+        </HelmetProvider>
   )
 }
 
