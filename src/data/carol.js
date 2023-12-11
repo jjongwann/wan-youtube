@@ -34,7 +34,7 @@ export const carolText = [
         title: "[𝐏𝐋𝐀𝐘𝐋𝐈𝐒𝐓] 크리스마스가 다가온다. 그것도 아주 행복할❤ 𝑴𝒆𝒓𝒓𝒚 𝑪𝒉𝒓𝒊𝒔𝒕𝒎𝒂𝒔",
         img: carol01,
         author: "하얀 눈",
-        videoId: " Zw4v47pwSTU", 
+        videoId: "Zw4v47pwSTU",
         date: "2023.12.07",
         channelId: "UCKHV4MGtdlMb3aCGotUjzsQ",
     },{
