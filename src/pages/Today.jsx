@@ -5,10 +5,10 @@ import { todayText } from '../data/today'
 import { Link } from 'react-router-dom'
 
 const Today = () => {
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(true); 
 
-    useEffect(()=>{
-        setTimeout(()=>{
+    useEffect(() => {
+        setTimeout(() => {
             setLoading(false);
         }, 300);
     }, []);
