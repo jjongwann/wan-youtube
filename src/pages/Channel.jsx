@@ -10,11 +10,14 @@ import { CiRead } from "react-icons/ci";
 import VideoSearch from '../components/video/VideoSearch';
 
 const Channel = () => {
-    const { channelId } = useParams();
-    const [ channelDetail, setChannelDetail ] = useState();
-    const [ channelVideo, setChannelVideo ] = useState([]);
-    const [ loading, setLoading ] = useState(true);
-    const [ nextPageToken, setNextPageToken ] = useState(null);
+    const { channelId } = useParams(); //채널 주소값
+    const [ channelDetail, setChannelDetail ] = useState(); //체널 페이지
+
+    const [ channelVideo, setChannelVideo ] = useState([]); //채널 페이지 비디오들
+
+    const [ loading, setLoading ] = useState(true); // 로딩효과
+
+    const [ nextPageToken, setNextPageToken ] = useState(null); //더보기 
 
     useEffect(() => {
         const fetchResults = async () => {
@@ -23,8 +26,8 @@ const Channel = () => {
                 setChannelDetail(data.items[0]);
                 
                 const videosData = await fetchFromAPI(`search?channelId=${channelId}&part=snippet%2Cid&order=date`);
-                setChannelVideo(videosData?.items);
-                setNextPageToken(videosData?.nextPageToken);
+                setChannelVideo(videosData?.items); //videosData가 있다면 items를 setChannelVideo에 저장
+                setNextPageToken(videosData?.nextPageToken); //videosData가 있다면 nextPageToken을 setNextPageToken에 저장
             } catch(error){
                 console.log('Eroor fetching data', error)
             } finally {
@@ -37,7 +40,7 @@ const Channel = () => {
     const loadMoreVideos = async () => {
         if(nextPageToken){
             const videosData = await fetchFromAPI(`search?channelId=${channelId}&part=snippet%2Cid&order=date&pageToken=${nextPageToken}`);
-            setChannelVideo(prevVideos => [...prevVideos, ...videosData.items]);
+            setChannelVideo(prevVideos => [...prevVideos, ...videosData.items]); //기존 비디오들과 다음 비디오들을 합침(CONCAT 역할)
             setNextPageToken(videosData?.nextPageToken);
         }
     }

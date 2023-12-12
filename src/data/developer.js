@@ -66,12 +66,6 @@ export const developerText = [
         channelId: "UC7iAOLiALt2rtMVAWWl4pnw"
     },
     {
-        img: "https://yt3.googleusercontent.com/ytc/AOPolaTiHU0ol325VdijS5AX4DQomGs6zlD_y_v0I0A6=s176-c-k-c0x00ffffff-no-rj",
-        name: "라매개발자",
-        channelAddress: "https://www.youtube.com/@lamedev",
-        channelId: "UCr3lkp7TJiJTCY4ffRQ1m2A"
-    },
-    {
         img: "https://yt3.googleusercontent.com/ytc/AOPolaSnppVkSh38WlQrn-7FzBAqlJpMLdGq4jS2GGHzgQ=s176-c-k-c0x00ffffff-no-rj",
         name: "드림코딩",
         channelAddress: "https://www.youtube.com/@dream-coding",
